@@ -16,7 +16,7 @@ async def get_image_embedding(file: Annotated[bytes, File()]):
         output = {"embedding": ModelHandler.get_embedding(file)}
         return output
     except Exception as e:
-        return {"message": "invalid request}"}
+        return {"message": "invalid request"}
 
 
 if __name__ == '__main__':
